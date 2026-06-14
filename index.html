@@ -16,82 +16,31 @@
     padding-bottom: 60px;
   }
 
-  /* HEADER */
   .header {
     background: linear-gradient(135deg, #ff8fb1 0%, #ffb3cb 100%);
     padding: 30px 20px 22px;
     text-align: center;
   }
-  .header h1 {
-    font-size: 1.6rem;
-    font-weight: 800;
-    color: #fff;
-    text-shadow: 0 2px 8px #e8669a60;
-    margin-bottom: 4px;
-  }
-  .header p { color: #ffe0ec; font-size: 0.85rem; font-weight: 600; }
+  .header h1 { font-size:1.6rem; font-weight:800; color:#fff; text-shadow:0 2px 8px #e8669a60; margin-bottom:4px; }
+  .header p { color:#ffe0ec; font-size:0.85rem; font-weight:600; }
 
-  /* STATS */
-  .stats {
-    display: flex;
-    background: #ffffff;
-    border-bottom: 2px solid #ffd6e7;
-  }
+  .stats { display:flex; background:#ffffff; border-bottom:2px solid #ffd6e7; }
   .stat { flex:1; text-align:center; padding:12px 8px; }
-  .stat:not(:last-child) { border-right: 1.5px solid #ffd6e7; }
+  .stat:not(:last-child) { border-right:1.5px solid #ffd6e7; }
   .stat-num { font-size:1.5rem; font-weight:800; color:#e8669a; }
   .stat-num.b { color:#ff8fb1; }
   .stat-num.g { color:#3dbb7e; }
   .stat-label { font-size:0.65rem; color:#c48ca4; font-weight:700; text-transform:uppercase; letter-spacing:.06em; }
 
-  /* TABS */
-  .tabs {
-    display:flex; background:#ffffff;
-    border-bottom: 2px solid #ffd6e7;
-    padding: 10px 12px 0; gap:6px;
-  }
-  .tab {
-    flex:1; padding:9px 4px;
-    border-radius:12px 12px 0 0;
-    font-size:0.74rem; font-weight:800;
-    cursor:pointer; border:2px solid transparent;
-    background:transparent; color:#c48ca4;
-    font-family:'Nunito',sans-serif;
-    transition:all .2s;
-  }
-  .tab.active {
-    background:#fff0f5; color:#e8669a;
-    border-color:#ffd6e7; border-bottom-color:#fff0f5;
-  }
+  .tabs { display:flex; background:#ffffff; border-bottom:2px solid #ffd6e7; padding:10px 12px 0; gap:6px; }
+  .tab { flex:1; padding:9px 4px; border-radius:12px 12px 0 0; font-size:0.74rem; font-weight:800; cursor:pointer; border:2px solid transparent; background:transparent; color:#c48ca4; font-family:'Nunito',sans-serif; transition:all .2s; }
+  .tab.active { background:#fff0f5; color:#e8669a; border-color:#ffd6e7; border-bottom-color:#fff0f5; }
 
-  /* ADD BOX */
-  .add-box {
-    margin:14px 14px 0;
-    background:#ffffff;
-    border-radius:18px;
-    border: 2px solid #ffd6e7;
-    padding:16px;
-    box-shadow: 0 4px 20px #ffb3cb30;
-  }
-  .add-box-title {
-    font-size:0.78rem; font-weight:800;
-    color:#e8669a; text-transform:uppercase;
-    letter-spacing:.08em; margin-bottom:12px;
-  }
+  .add-box { margin:14px 14px 0; background:#ffffff; border-radius:18px; border:2px solid #ffd6e7; padding:16px; box-shadow:0 4px 20px #ffb3cb30; }
+  .add-box-title { font-size:0.78rem; font-weight:800; color:#e8669a; text-transform:uppercase; letter-spacing:.08em; margin-bottom:12px; }
   .field { margin-bottom:10px; }
-  .field label {
-    display:block; font-size:0.7rem; font-weight:700;
-    color:#c48ca4; margin-bottom:4px;
-    text-transform:uppercase; letter-spacing:.05em;
-  }
-  .field input {
-    width:100%; background:#fff5f9;
-    border: 2px solid #ffd6e7;
-    border-radius:12px; padding:10px 13px;
-    color:#5a2d41; font-family:'Nunito',sans-serif;
-    font-size:0.88rem; font-weight:600;
-    outline:none; transition: border-color .2s;
-  }
+  .field label { display:block; font-size:0.7rem; font-weight:700; color:#c48ca4; margin-bottom:4px; text-transform:uppercase; letter-spacing:.05em; }
+  .field input { width:100%; background:#fff5f9; border:2px solid #ffd6e7; border-radius:12px; padding:10px 13px; color:#5a2d41; font-family:'Nunito',sans-serif; font-size:0.88rem; font-weight:600; outline:none; transition:border-color .2s; }
   .field input:focus { border-color:#ff8fb1; }
   .field input::placeholder { color:#e8b4c8; }
   .row2 { display:flex; gap:8px; }
@@ -99,175 +48,87 @@
 
   .who-label { font-size:0.7rem; font-weight:700; color:#c48ca4; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; }
   .who-pills { display:flex; gap:7px; margin-bottom:12px; }
-  .wpill {
-    flex:1; padding:9px 4px; border-radius:12px;
-    border:2px solid #ffd6e7; background:#fff5f9;
-    color:#c48ca4; font-size:0.75rem; font-family:'Nunito',sans-serif;
-    font-weight:700; cursor:pointer; text-align:center;
-    transition:all .2s;
-  }
+  .wpill { flex:1; padding:9px 4px; border-radius:12px; border:2px solid #ffd6e7; background:#fff5f9; color:#c48ca4; font-size:0.75rem; font-family:'Nunito',sans-serif; font-weight:700; cursor:pointer; text-align:center; transition:all .2s; }
   .wpill.on { background:#ff8fb1; color:#fff; border-color:#ff8fb1; }
 
-  .add-btn {
-    width:100%; padding:13px;
-    background: linear-gradient(135deg, #ff8fb1, #e8669a);
-    border:none; border-radius:14px; color:#fff;
-    font-family:'Nunito',sans-serif; font-size:0.93rem; font-weight:800;
-    cursor:pointer; box-shadow: 0 4px 16px #ff8fb150;
-    transition: transform .15s;
-  }
+  .add-btn { width:100%; padding:13px; background:linear-gradient(135deg,#ff8fb1,#e8669a); border:none; border-radius:14px; color:#fff; font-family:'Nunito',sans-serif; font-size:0.93rem; font-weight:800; cursor:pointer; box-shadow:0 4px 16px #ff8fb150; transition:transform .15s; }
   .add-btn:active { transform:scale(.97); }
+  .add-btn:disabled { opacity:.6; cursor:not-allowed; }
 
-  /* LIST */
   .list-wrap { padding:14px; }
-  .sec-title {
-    font-size:0.7rem; font-weight:800; color:#c48ca4;
-    text-transform:uppercase; letter-spacing:.1em;
-    margin-bottom:10px;
-    display:flex; align-items:center; gap:8px;
-  }
-  .sec-pill {
-    background:#ffe0ee; color:#e8669a;
-    font-size:0.66rem; padding:1px 9px; border-radius:20px; font-weight:800;
-  }
+  .sec-title { font-size:0.7rem; font-weight:800; color:#c48ca4; text-transform:uppercase; letter-spacing:.1em; margin-bottom:10px; display:flex; align-items:center; gap:8px; }
+  .sec-pill { background:#ffe0ee; color:#e8669a; font-size:0.66rem; padding:1px 9px; border-radius:20px; font-weight:800; }
   .sec-pill.g { background:#d6f5e6; color:#3dbb7e; }
 
-  .divider {
-    display:flex; align-items:center; gap:10px;
-    margin:18px 0 12px;
-  }
-  .divider::before,.divider::after {
-    content:''; flex:1; height:1.5px; background:#ffd6e7; border-radius:2px;
-  }
-  .divider span {
-    font-size:0.66rem; font-weight:800; color:#3dbb7e;
-    background:#d6f5e6; padding:2px 10px; border-radius:20px;
-    text-transform:uppercase; letter-spacing:.08em;
-  }
+  .divider { display:flex; align-items:center; gap:10px; margin:18px 0 12px; }
+  .divider::before,.divider::after { content:''; flex:1; height:1.5px; background:#ffd6e7; border-radius:2px; }
+  .divider span { font-size:0.66rem; font-weight:800; color:#3dbb7e; background:#d6f5e6; padding:2px 10px; border-radius:20px; text-transform:uppercase; letter-spacing:.08em; }
 
-  /* CARD */
-  .card {
-    background:#ffffff;
-    border:2px solid #ffd6e7;
-    border-radius:16px;
-    display:flex; gap:12px; padding:12px;
-    margin-bottom:10px;
-    box-shadow: 0 3px 14px #ffb3cb25;
-    position:relative; overflow:hidden;
-    transition: opacity .3s;
-  }
+  .card { background:#ffffff; border:2px solid #ffd6e7; border-radius:16px; display:flex; gap:12px; padding:12px; margin-bottom:10px; box-shadow:0 3px 14px #ffb3cb25; position:relative; overflow:hidden; transition:opacity .3s; }
   .card.done { opacity:.55; background:#fafffe; border-color:#b2ecd3; }
-  .stripe {
-    position:absolute; left:0; top:0; bottom:0; width:4px;
-    background: linear-gradient(180deg,#ff8fb1,#e8669a);
-    border-radius:16px 0 0 16px;
-  }
-  .card.done .stripe { background: linear-gradient(180deg,#3dbb7e,#27a065); }
+  .stripe { position:absolute; left:0; top:0; bottom:0; width:4px; background:linear-gradient(180deg,#ff8fb1,#e8669a); border-radius:16px 0 0 16px; }
+  .card.done .stripe { background:linear-gradient(180deg,#3dbb7e,#27a065); }
 
-  .poster {
-    width:68px; height:100px;
-    border-radius:10px; overflow:hidden; flex-shrink:0;
-    background:#ffe0ee; border:2px solid #ffd6e7;
-    display:flex; align-items:center; justify-content:center; font-size:2rem;
-  }
+  .poster { width:68px; height:100px; border-radius:10px; overflow:hidden; flex-shrink:0; background:#ffe0ee; border:2px solid #ffd6e7; display:flex; align-items:center; justify-content:center; font-size:2rem; }
   .poster img { width:100%; height:100%; object-fit:cover; display:block; }
 
   .info { flex:1; min-width:0; }
-  .ctitle {
-    font-size:.93rem; font-weight:800; color:#5a2d41;
-    line-height:1.3; margin-bottom:5px;
-  }
+  .ctitle { font-size:.93rem; font-weight:800; color:#5a2d41; line-height:1.3; margin-bottom:5px; }
   .card.done .ctitle { text-decoration:line-through; color:#c48ca4; }
   .tags { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:8px; }
-  .tag {
-    font-size:0.64rem; padding:2px 9px;
-    border-radius:20px; font-weight:700;
-  }
+  .tag { font-size:0.64rem; padding:2px 9px; border-radius:20px; font-weight:700; }
   .tag-who { background:#ffe0ee; color:#e8669a; }
   .tag-genre { background:#fff0d6; color:#b87c00; }
   .tag-lang { background:#e0eeff; color:#2a7dd4; }
   .tag-done { background:#d6f5e6; color:#27a065; }
 
   .actions { display:flex; gap:6px; }
-  .btn-main {
-    flex:1; padding:7px 8px; border-radius:10px;
-    border:none; font-family:'Nunito',sans-serif;
-    font-size:0.73rem; font-weight:800; cursor:pointer; transition:all .2s;
-  }
+  .btn-main { flex:1; padding:7px 8px; border-radius:10px; border:none; font-family:'Nunito',sans-serif; font-size:0.73rem; font-weight:800; cursor:pointer; transition:all .2s; }
   .btn-green { background:linear-gradient(135deg,#3dbb7e,#27a065); color:#fff; box-shadow:0 2px 8px #3dbb7e50; }
   .btn-gray { background:#fff5f9; color:#c48ca4; border:2px solid #ffd6e7; }
-  .btn-del {
-    width:34px; height:34px; border-radius:10px;
-    border:2px solid #ffd6e7; background:#fff5f9;
-    color:#e8b4c8; font-size:.85rem; cursor:pointer;
-    display:flex; align-items:center; justify-content:center;
-    transition:all .2s;
-  }
+  .btn-del { width:34px; height:34px; border-radius:10px; border:2px solid #ffd6e7; background:#fff5f9; color:#e8b4c8; font-size:.85rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .2s; }
   .btn-del:hover { border-color:#ff8fb1; color:#e8669a; }
 
-  /* EMPTY */
   .empty { text-align:center; padding:50px 20px; }
   .empty .ei { font-size:3.5rem; margin-bottom:10px; }
   .empty h3 { font-size:1rem; font-weight:800; color:#e8669a; margin-bottom:6px; }
   .empty p { font-size:.82rem; color:#c48ca4; font-weight:600; }
 
-  /* MODAL */
-  .overlay {
-    display:none; position:fixed; inset:0;
-    background:#5a2d4188; z-index:100;
-    align-items:flex-end; justify-content:center;
-  }
+  /* LOADING */
+  .loading { text-align:center; padding:40px 20px; color:#c48ca4; font-weight:700; font-size:.9rem; }
+  .loading .spin { font-size:2rem; display:block; margin-bottom:10px; animation: spin 1s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .overlay { display:none; position:fixed; inset:0; background:#5a2d4188; z-index:100; align-items:flex-end; justify-content:center; }
   .overlay.open { display:flex; }
-  .modal {
-    background:#fff; border-radius:24px 24px 0 0;
-    padding:22px 18px 38px; width:100%; max-width:480px;
-    border:2px solid #ffd6e7; border-bottom:none;
-  }
+  .modal { background:#fff; border-radius:24px 24px 0 0; padding:22px 18px 38px; width:100%; max-width:480px; border:2px solid #ffd6e7; border-bottom:none; }
   .drag { width:36px; height:4px; background:#ffd6e7; border-radius:4px; margin:0 auto 16px; }
   .modal h3 { font-size:1.05rem; font-weight:800; margin-bottom:6px; }
   .modal p { font-size:.83rem; color:#c48ca4; font-weight:600; margin-bottom:18px; }
   .mbtns { display:flex; gap:9px; }
-  .mbtns button {
-    flex:1; padding:12px; border-radius:14px;
-    border:none; font-family:'Nunito',sans-serif;
-    font-size:.88rem; font-weight:800; cursor:pointer;
-  }
+  .mbtns button { flex:1; padding:12px; border-radius:14px; border:none; font-family:'Nunito',sans-serif; font-size:.88rem; font-weight:800; cursor:pointer; }
   .mc { background:#fff5f9; color:#c48ca4; border:2px solid #ffd6e7; }
   .mok { background:linear-gradient(135deg,#ff8fb1,#e8669a); color:#fff; }
 
-  /* TOAST */
-  .toast {
-    position:fixed; bottom:20px; left:50%;
-    transform:translateX(-50%) translateY(12px);
-    background:#5a2d41; color:#fff;
-    padding:10px 22px; border-radius:30px;
-    font-size:.8rem; font-weight:700;
-    opacity:0; transition:all .3s;
-    pointer-events:none; white-space:nowrap; z-index:200;
-  }
+  .toast { position:fixed; bottom:20px; left:50%; transform:translateX(-50%) translateY(12px); background:#5a2d41; color:#fff; padding:10px 22px; border-radius:30px; font-size:.8rem; font-weight:700; opacity:0; transition:all .3s; pointer-events:none; white-space:nowrap; z-index:200; }
   .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+  /* SYNC indicator */
+  .sync-dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:#3dbb7e; margin-right:6px; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
 </style>
 </head>
 <body>
 
 <div class="header">
   <h1>🎀 Our Movie List</h1>
-  <p>Dono saath mein dekhenge 🍿💕</p>
+  <p><span class="sync-dot"></span>Dono saath mein dekhenge 🍿💕</p>
 </div>
 
 <div class="stats">
-  <div class="stat">
-    <div class="stat-num" id="tc">0</div>
-    <div class="stat-label">🎬 Total</div>
-  </div>
-  <div class="stat">
-    <div class="stat-num b" id="pc">0</div>
-    <div class="stat-label">⏳ Baaki</div>
-  </div>
-  <div class="stat">
-    <div class="stat-num g" id="wc">0</div>
-    <div class="stat-label">✅ Dekhe</div>
-  </div>
+  <div class="stat"><div class="stat-num" id="tc">0</div><div class="stat-label">🎬 Total</div></div>
+  <div class="stat"><div class="stat-num b" id="pc">0</div><div class="stat-label">⏳ Baaki</div></div>
+  <div class="stat"><div class="stat-num g" id="wc">0</div><div class="stat-label">✅ Dekhe</div></div>
 </div>
 
 <div class="tabs">
@@ -283,14 +144,8 @@
     <input id="mname" type="text" placeholder="e.g. Jawan, Barbie, Inception..." />
   </div>
   <div class="row2">
-    <div class="field">
-      <label>Genre</label>
-      <input id="mgenre" type="text" placeholder="Romance, Action..." />
-    </div>
-    <div class="field">
-      <label>Language</label>
-      <input id="mlang" type="text" placeholder="Hindi, English..." />
-    </div>
+    <div class="field"><label>Genre</label><input id="mgenre" type="text" placeholder="Romance, Action..." /></div>
+    <div class="field"><label>Language</label><input id="mlang" type="text" placeholder="Hindi, English..." /></div>
   </div>
   <div class="field">
     <label>Thumbnail URL 🖼️ (optional)</label>
@@ -302,10 +157,12 @@
     <button class="wpill" id="wFriend" onclick="pickWho('friend')">Dost 👧</button>
     <button class="wpill" id="wBoth" onclick="pickWho('both')">Dono 💕</button>
   </div>
-  <button class="add-btn" onclick="addMovie()">🌸 Add Movie</button>
+  <button class="add-btn" id="addBtn" onclick="addMovie()">🌸 Add Movie</button>
 </div>
 
-<div class="list-wrap" id="listWrap"></div>
+<div class="list-wrap" id="listWrap">
+  <div class="loading"><span class="spin">🌸</span>Movies load ho rahi hain...</div>
+</div>
 
 <div class="overlay" id="delOverlay">
   <div class="modal">
@@ -321,60 +178,84 @@
 
 <div class="toast" id="toast"></div>
 
-<script>
-  let movies = JSON.parse(localStorage.getItem('mlv3') || '[]');
-  let tab = 'all', who = 'me', delId = null;
+<!-- Firebase SDK -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getDatabase, ref, push, onValue, update, remove } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
-  if (!movies.length) {
-    movies = [
-      {id:1, title:'Jawan', genre:'Action', lang:'Hindi', thumb:'https://image.tmdb.org/t/p/w300/eB4k3MBSp7H6aNuSCyJ5TdoEjPf.jpg', who:'both', watched:false},
-      {id:2, title:'Barbie', genre:'Comedy', lang:'English', thumb:'https://image.tmdb.org/t/p/w300/iuFNMS8vlbg6J1mBNdOFCYMWxTb.jpg', who:'friend', watched:false},
-      {id:3, title:'DDLJ', genre:'Romance', lang:'Hindi', thumb:'https://image.tmdb.org/t/p/w300/kRhhRhsaKZbpCRTJmjCHmSgFiNf.jpg', who:'me', watched:true},
-    ];
-    save();
-  }
+  // 🔥 FIREBASE CONFIG
+  const firebaseConfig = {
+    databaseURL: "https://movie-list-2bbff-default-rtdb.firebaseio.com"
+  };
 
-  function save() { localStorage.setItem('mlv3', JSON.stringify(movies)); render(); }
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+  const moviesRef = ref(db, 'movies');
 
-  function pickWho(w) {
+  let movies = {};
+  let tab = 'all';
+  let who = 'me';
+  let delId = null;
+
+  // REALTIME LISTENER — har change pe dono phones pe update
+  onValue(moviesRef, (snapshot) => {
+    movies = snapshot.val() || {};
+    render();
+  });
+
+  window.pickWho = function(w) {
     who = w;
     ['me','friend','both'].forEach(x =>
       document.getElementById('w'+x.charAt(0).toUpperCase()+x.slice(1)).classList.toggle('on', x===w));
   }
 
-  function switchTab(t, el) {
+  window.switchTab = function(t, el) {
     tab = t;
     document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
     el.classList.add('active');
     render();
   }
 
-  function addMovie() {
+  window.addMovie = async function() {
     const name = document.getElementById('mname').value.trim();
     if (!name) { toast('Movie ka naam daalo! 😅'); return; }
-    movies.unshift({
-      id: Date.now(),
-      title: name,
-      genre: document.getElementById('mgenre').value.trim(),
-      lang: document.getElementById('mlang').value.trim(),
-      thumb: document.getElementById('mthumb').value.trim(),
-      who, watched: false
-    });
-    ['mname','mgenre','mlang','mthumb'].forEach(id => document.getElementById(id).value = '');
-    save(); toast('Movie add ho gayi! 🎀');
+    const btn = document.getElementById('addBtn');
+    btn.disabled = true; btn.textContent = 'Adding...';
+    try {
+      await push(moviesRef, {
+        title: name,
+        genre: document.getElementById('mgenre').value.trim(),
+        lang: document.getElementById('mlang').value.trim(),
+        thumb: document.getElementById('mthumb').value.trim(),
+        who, watched: false,
+        date: Date.now()
+      });
+      ['mname','mgenre','mlang','mthumb'].forEach(id => document.getElementById(id).value = '');
+      toast('Movie add ho gayi! 🎀');
+    } catch(e) { toast('Error! Dobara try karo 😅'); }
+    btn.disabled = false; btn.textContent = '🌸 Add Movie';
   }
 
-  function toggleWatch(id) {
-    const m = movies.find(x => x.id === id);
-    m.watched = !m.watched;
-    save(); toast(m.watched ? 'Dekh liya ✅ Yay!' : 'Wapas list mein 🎬');
+  window.toggleWatch = async function(id) {
+    const m = movies[id];
+    await update(ref(db, 'movies/'+id), { watched: !m.watched });
+    toast(!m.watched ? 'Dekh liya ✅ Yay!' : 'Wapas list mein 🎬');
   }
 
-  function openDel(id) { delId=id; document.getElementById('delOverlay').classList.add('open'); }
-  function closeModal() { delId=null; document.getElementById('delOverlay').classList.remove('open'); }
-  function confirmDel() {
-    movies = movies.filter(x => x.id !== delId);
-    save(); toast('Hata di! 🗑️'); closeModal();
+  window.openDel = function(id) {
+    delId = id;
+    document.getElementById('delOverlay').classList.add('open');
+  }
+  window.closeModal = function() {
+    delId = null;
+    document.getElementById('delOverlay').classList.remove('open');
+  }
+  window.confirmDel = async function() {
+    if (delId) {
+      await remove(ref(db, 'movies/'+delId));
+      toast('Hata di! 🗑️');
+    }
+    closeModal();
   }
 
   function toast(msg) {
@@ -385,7 +266,7 @@
 
   function whoLabel(w) { return w==='me'?'Main 👩':w==='friend'?'Dost 👧':'Dono 💕'; }
 
-  function card(m) {
+  function card(id, m) {
     const img = m.thumb ? `<img src="${m.thumb}" onerror="this.parentElement.innerHTML='🎬'">` : '🎬';
     return `<div class="card ${m.watched?'done':''}">
       <div class="stripe"></div>
@@ -399,23 +280,24 @@
           ${m.watched?`<span class="tag tag-done">✓ Dekha</span>`:''}
         </div>
         <div class="actions">
-          <button class="btn-main ${m.watched?'btn-gray':'btn-green'}" onclick="toggleWatch(${m.id})">
+          <button class="btn-main ${m.watched?'btn-gray':'btn-green'}" onclick="toggleWatch('${id}')">
             ${m.watched?'↩ Wapas karo':'✓ Dekh liya!'}
           </button>
-          <button class="btn-del" onclick="openDel(${m.id})">🗑️</button>
+          <button class="btn-del" onclick="openDel('${id}')">🗑️</button>
         </div>
       </div>
     </div>`;
   }
 
   function render() {
-    let list = movies;
-    if (tab==='pending') list = movies.filter(m=>!m.watched);
-    if (tab==='watched') list = movies.filter(m=>m.watched);
+    const all = Object.entries(movies).sort((a,b) => (b[1].date||0)-(a[1].date||0));
+    let list = all;
+    if (tab==='pending') list = all.filter(([,m])=>!m.watched);
+    if (tab==='watched') list = all.filter(([,m])=>m.watched);
 
-    document.getElementById('tc').textContent = movies.length;
-    document.getElementById('pc').textContent = movies.filter(m=>!m.watched).length;
-    document.getElementById('wc').textContent = movies.filter(m=>m.watched).length;
+    document.getElementById('tc').textContent = all.length;
+    document.getElementById('pc').textContent = all.filter(([,m])=>!m.watched).length;
+    document.getElementById('wc').textContent = all.filter(([,m])=>m.watched).length;
 
     const wrap = document.getElementById('listWrap');
     if (!list.length) {
@@ -426,17 +308,17 @@
       </div>`; return;
     }
 
-    const pending = list.filter(m=>!m.watched);
-    const watched = list.filter(m=>m.watched);
+    const pending = list.filter(([,m])=>!m.watched);
+    const watched = list.filter(([,m])=>m.watched);
     let html = '';
 
     if (pending.length) {
       if (tab==='all') html += `<div class="sec-title">🌸 Dekhne hai <span class="sec-pill">${pending.length}</span></div>`;
-      pending.forEach(m => html += card(m));
+      pending.forEach(([id,m]) => html += card(id,m));
     }
     if (watched.length) {
       if (tab==='all') html += `<div class="divider"><span>✅ Dekh liye</span></div>`;
-      watched.forEach(m => html += card(m));
+      watched.forEach(([id,m]) => html += card(id,m));
     }
 
     wrap.innerHTML = html;
@@ -444,8 +326,6 @@
 
   document.getElementById('delOverlay').addEventListener('click', e => { if(e.target.id==='delOverlay') closeModal(); });
   document.getElementById('mname').addEventListener('keydown', e => { if(e.key==='Enter') addMovie(); });
-
-  render();
 </script>
 </body>
 </html>
